@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;500&display=swap');
+
+$cor-primaria1: #E3AC50;
+$cor-primaria2: #7B84EB;
+$cor-secundaria: #464b9728;
+$cor-texto: #6C6C6C;
+$cor-titulo: #26272D;
+
+
+@function rem($pixels, $contexto: 16) {
+  @return ($pixels / $contexto) * 1rem;
+}
+
+@mixin mobile {
+  @media (max-width:700px) {
+    @content;
+  }
+}

@@ -1,0 +1,29 @@
+.galeria-container {
+  padding: 6rem 1.5rem;
+
+  h1 {
+    font-family: 'Arima', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    color: $cor-primaria1;
+
+    margin-bottom: rem(20);
+
+    @include mobile {
+      font-size: 3rem;
+    }
+  }
+}
+
+.galeria-imagens {
+  margin: 0 auto;
+  column-count: 3;
+
+  @include mobile {
+    column-count: 2;
+  }
+
+  .imagens {
+    margin-bottom: rem(20);
+  }
+}

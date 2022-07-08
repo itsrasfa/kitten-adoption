@@ -1,0 +1,138 @@
+.conteudo-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 6rem 1.5rem;
+  position: relative;
+
+
+  @include mobile {
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+    font-size: 3rem;
+  }
+
+  h1 {
+    font-family: 'Arima', sans-serif;
+    font-size: 4rem;
+    line-height: rem(75);
+    max-width: 10ch;
+    color: $cor-titulo;
+
+    @include mobile {
+      font-size: 3.2rem;
+    }
+
+    .ponto {
+      font-family: 'Arima', sans-serif;
+      color: $cor-primaria2;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: rem(35);
+      height: rem(35);
+      margin-left: 1rem;
+
+      background-image: url('/assets/imgs/flower.svg');
+      background-repeat: no-repeat;
+
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      width: rem(70);
+      height: rem(70);
+      margin-right: .5rem;
+
+      background-image: url('/assets/imgs/rainbow.svg');
+      background-repeat: no-repeat;
+
+      position: absolute;
+      top: 10px;
+      left: 230px;
+
+      @include mobile {
+        background-size: rem(50);
+
+        width: rem(50);
+        height: rem(50);
+        top: rem(-10);
+      }
+    }
+
+    span {
+      font-family: 'Arima', sans-serif;
+      color: $cor-primaria1;
+    }
+  }
+
+  p {
+    max-width: 50ch;
+    margin-top: rem(15);
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    line-height: rem(30);
+    color: $cor-texto;
+
+    @include mobile {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  border: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+  border-radius: rem(35);
+
+  padding: 1.2rem 2rem;
+  margin-top: rem(30);
+
+  background-image: linear-gradient(90deg, #8d95ee 0%, #656ecb 100%);
+
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #E9EBF3;
+
+  cursor: pointer;
+
+  &:hover {
+    background-image: linear-gradient(to bottom, #8d95ee 0%, #656ecb 100%);
+  }
+
+  @include mobile {
+    padding: .9rem 2rem;
+    margin-bottom: rem(120);
+  }
+
+  img {
+    max-width: rem(30);
+
+    &:hover {
+      transform: translateX(10px);
+      transition: all 0.2s;
+    }
+  }
+}
+
+.conteudo-principal {
+  background-image: url('/assets/imgs/confetti.svg');
+  background-repeat: no-repeat;
+  background-position: top 50px right 30px;
+
+  @include mobile {
+    background-size: rem(40);
+    background-position: bottom 300px right 40px;
+  }
+}

@@ -1,0 +1,52 @@
+.numeros-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: linear-gradient(90deg, #8d95ee 0%, #656ecb 100%);
+  box-shadow: 0px 8px 40px 2px rgba(140, 149, 248, 0.47);
+
+  padding: rem(40);
+  color: #E9EBF3;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 2rem;
+
+    margin-top: rem(40);
+    box-shadow: none;
+  }
+
+  h2 {
+    font-family: 'Arima', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    margin-bottom: rem(16);
+  }
+
+  p {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .numeros {
+    text-align: center;
+    width: rem(430);
+
+    &:nth-child(2) {
+      border-right: 2px solid #464b9741;
+      border-left: 2px solid #464b9741;
+
+      @include mobile {
+        padding: 3rem 0;
+        width: 300px;
+
+        border-bottom: 2px solid #464b9741;
+        border-top: 2px solid #464b9741;
+        border-right: none;
+        border-left: none;
+      }
+    }
+  }
+}

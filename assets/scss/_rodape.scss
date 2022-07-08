@@ -1,0 +1,30 @@
+.rodape {
+  display: grid;
+  grid-template-columns: 1fr auto;
+
+  border-top: 2px solid $cor-secundaria;
+  padding: 3rem 2rem;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    place-items: center;
+    row-gap: rem(30);
+  }
+
+  a {
+    font-family: Roboto;
+    font-size: 1.1rem;
+    color: $cor-titulo;
+  }
+
+  .rodape-links {
+    display: flex;
+    gap: rem(26);
+
+    @include mobile {
+      grid-area: -1;
+      gap: rem(22);
+    }
+
+  }
+}
