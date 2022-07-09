@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 4rem 1rem 7rem 1rem;
   position: relative;
 
@@ -24,8 +23,6 @@
     }
   }
 }
-
-
 
 #nav {
   display: none;
@@ -71,4 +68,15 @@
 
 .hidden {
   display: none;
+}
+
+.back-to-top {
+  display: none;
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  bottom: 15px;
+  right: 30px;
+  transition: 0.3s;
+  z-index: 5;
 }
